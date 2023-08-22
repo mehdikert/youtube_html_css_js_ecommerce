@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="">.sneakers</a>
+            <div id="navbar">
+                <div id="nav-search">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <a href="" class="search-logo"><img src="../img/search.png" width="24px" alt=""></a>
+                </div>
+                <ul id="nav-list">
+                    <li class="nav-link" onclick="changeItems(0)">AIR FORCE</li>
+                    <li onclick="changeItems(1)" class="nav-link">JORDAN</li>
+                    <li onclick="changeItems(2)" class="nav-link">BLAZER</li>
+                    <li onclick="changeItems(3)" class="nav-link">CRATER</li>
+                    <li onclick="changeItems(4)" class="nav-link">HIPPIE</li>
+                </ul>
+            </div>
+            <a href="">Limited Offer!</a>
+        </nav>
+        <div class="container">
+            <div class="sneakers-container">
+                <h1 class="price">$119</h1>
+                <div class="blob-img">
+                    <img src="../img/air.png" width="600px" alt="">
+                </div>
+                <div class="header-btn">
+                    <button>BUY NOW!</button>
+                </div>
+            </div>
+            <p class="present-sneak">
+                <span>AIR FORCE</span> <br>
+                NEW <br>
+                SEASON
+            </p>
+        </div>
+
+
+    </header>
+
+    <!------------------------------------------------------------------------------>
+
+    <main>
+        <section id="section-card">
+            <div class="card-container">
+                <img src="../img/shipping.png" alt="">
+                <h1>FREE SHIPPING</h1>
+                <p>Free worldwide shipping on all orders.</p>
+            </div>
+            <div class="card-container">
+                <img src="../img/return.png" alt="">
+                <h1>30 DAYS RETURN</h1>
+                <p>No question return and easy refund in 14 days.</p>
+            </div>
+            <div class="card-container">
+                <img src="../img/gift.png" alt="">
+                <h1>GIFT CARDS</h1>
+                <p>Buy gift cards and use coupon codes easily.</p>
+            </div>
+            <div class="card-container">
+                <img src="../img/contact.png" alt="">
+                <h1>CONTACT US!</h1>
+                <p>Keep in touch via email and support system.</p>
+            </div>
+        </section>
+        <section id="section-choice">
+            <img id="product-img" src="../img/air.png" alt="">
+            <div class="product">
+                <h1 id="product-name">Air Force</h1>
+                <h3 id="price">$119</h3>
+                <p>Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda dolorum doloremque
+                    sapiente aliquid aperiam.
+                </p>
+                <div class="div-color">
+                    <div onclick="changeColor('black')" class="color"></div>
+                    <div onclick="changeColor('b')" class="color"></div>
+                </div>
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">41</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">44</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="formDisplay(0)">BUY NOW!</button>
+            </div>
+            <form action="" id="form-buy">
+                <div onclick="formDisplay(1)" for="" id="close">x</div>
+                <h1>Personal Information</h1>
+                <label for="name">Name and Surname <br><br><input type="text" name="name" id="name"
+                        placeholder="John Doe"></label>
+                <label for="number">Phone Number <br><br><input type="text" name="number" id="number"
+                        placeholder="+1 234 5678"></label>
+                <label for="adress">Address <br><br><input type="text" name="adress" id="adress"
+                        placeholder="Elton St 21 22-145"></label>
+                <h1>Card Information</h1>
+                <div id="bank">
+                    <img src="../img/visa.png" alt="">
+                    <img src="../img/master.png" alt="">
+                </div>
+                <input type="text" placeholder="Card Number">
+                <div class="date">
+                    <input type="text" name="" id="" placeholder="mm">
+                    <input type="text" name="" id="" placeholder="yyyy">
+                    <input type="text" name="" id="" placeholder="cvv">
+                </div>
+                <input type="button" value="CHECKOUT !" id="btn-checkOut">
+            </form>
+        </section>
+        <section id="section-msg">
+            <div class="containerMsg">
+                <h1>Be Yourself!</h1>
+                <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+            </div>
+            <div class="containerMsg">
+                <h1>Thus is the First Day of Your New Life</h1>
+                <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+            </div>
+            <div class="containerMsg">
+                <h1>Just Do it!</h1>
+                <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+            </div>
+        </section>
+        <section id="section-new">
+            <div id="new">
+                <h1>WINTER NEW ARRIVALS</h1>
+                <h1>New Season</h1>
+                <h1>New Collection</h1>
+                <a href="#">CHOOSE YOUR STYLE</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-liste">
+            <ul class="footer-link">
+                <li>About Us</li>
+                <div>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Affiliates</a></li>
+                    <li><a href="">Stores</a></li>
+                </div>
+            </ul>
+            <ul class="footer-link">
+                <li>Useful Links</li>
+                <div>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Refund</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Stories</a></li>
+                </div>
+            </ul>
+            <ul class="footer-link">
+                <li>Products</li>
+                <div>
+                    <li><a href="">Air Force</a></li>
+                    <li><a href="">Air Jordan</a></li>
+                    <li><a href="">Blazer</a></li>
+                    <li><a href="">Crater</a></li>
+                    <li><a href="">Hippie</a></li>
+                </div>
+            </ul>
+        </div>
+        <!-- -------------------------------------------------------      -->
+
+        <div class="footer-contact">
+            <form action="" id="#footer-form">
+                <h3>Subscribe to our newsletter</h3>
+                <input type="email" placeholder="your@email.com">
+                <input type="button" value="Join!">
+            </form>
+
+            <div class="socialMed">
+                <h3>Follow Us</h3>
+                <div>
+                    <img src="../img/facebook.png" alt="">
+                    <img src="../img/twitter.png" alt="">
+                    <img src="../img/instagram.png" alt="">
+                    <img src="../img/whatsapp.png" alt="">
+                </div>
+            </div>
+            <p>@Lama Dev. All rights reserved. 2022.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
